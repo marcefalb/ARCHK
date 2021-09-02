@@ -10,10 +10,9 @@ main{
   margin: 0 auto;
 }
 .about-company__title{
-  margin-top: 69px;
+  margin: 69px auto 199px auto;
   font-size: 46px;
   font-weight: 700;
-  margin-bottom: 199px;
 }
 .about-company__description{
   margin-bottom: 105px;
@@ -188,6 +187,9 @@ main{
 }
 label{
   margin: 20px auto auto 10px;
+  font-size: 14px;
+  font-weight: 500;
+  width: 250px;
 }
 .person-data{
   text-decoration: none;
@@ -206,7 +208,14 @@ label{
   font-weight:500;
   color: #134965;
 }
-.help-form__input{
+.help-form__input_phone{
+  padding: 10px 40px 15px 50px;
+  font-size: 18px;
+  font-weight:400;
+  background: transparent;
+  border-bottom: 1px solid #134965;
+}
+.help-form__input_mail{
   padding: 10px 40px 15px 50px;
   font-size: 18px;
   font-weight:400;
@@ -216,4 +225,46 @@ label{
 .help-form__item span{
   font-size: 24px;
   font-weight:500;
+}
+@media (max-width: 768px) {
+  .about-company{
+    max-width: 730px;
+  }
+  .about-company__title{
+    margin: 20px auto 50px auto;
+    font-size: 36px;
+  }
+  .about-company__description{
+    margin-bottom: 21px;
+  }
+  .differences-cards__wrapper{
+    max-width: 730px;
+  }
+  .differences-cards__description{
+    padding-top: 50px;
+    max-width: 728px;
+    padding-bottom: 30px;
+  }
+  .differences-cards__list{
+    column-gap: 31px;
+    row-gap: 20px;
+    padding-bottom: 69px;
+    justify-content:center;
+  }
+  .info-statistic{
+    margin: 50px auto;
+  }
+  .help-form__wrapper{
+    max-width: 728px;
+  }
+  .help-form__title{
+    margin-top: 42px;
+    font-size: 36px;
+  }
+  .help-form__description{
+    margin-top: 30px;
+  }
+  .help-form__block{
+    margin: 50px auto;
+  }
 }
