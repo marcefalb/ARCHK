@@ -100,7 +100,7 @@ ul {
 /* ----------------------> Шапка <---------------------- */
 
 header {
-  position: absolute;
+  position: relative;
   z-index: 1;
   
   height: 70px;

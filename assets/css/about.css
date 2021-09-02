@@ -1,0 +1,219 @@
+main{
+  margin-bottom: 0;
+}
+.about-company{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+}
+.about-company__title{
+  margin-top: 69px;
+  font-size: 46px;
+  font-weight: 700;
+  margin-bottom: 199px;
+}
+.about-company__description{
+  margin-bottom: 105px;
+  font-size: 24px;
+  font-weight: 400;
+}
+.differences-cards{
+  width: 100%;
+  background: var(--c-dark);
+  border-radius: 10px;
+  
+}
+.differences-cards__wrapper{
+  max-width: 1120px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+.differences-cards__description{
+  max-width: 952px;
+  width: 100%;
+  margin: 0 auto;
+  color: #7D7987;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.differences-cards__list{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 80px;
+  row-gap: 37px;
+  padding-bottom: 100px;
+}
+.differences-cards__item{
+  width: 320px;
+  height: 354px;
+  cursor: pointer;
+  background: #FFFFFF;
+  box-shadow: 10px 10px 50px rgba(229, 233, 246, 0.1);
+  border-radius: 10px;
+}
+.differences-cards__img{
+  max-width: 92px;
+  width: 100%;
+  margin: 50px auto auto 25px;
+}
+.differences-cards__title{
+  text-align: left;
+  font-size: 24px;
+  line-height: 56px;
+  font-weight: 700;
+  margin: 24px auto auto 25px;
+}
+.differences-cards__subtitle{
+  text-align:left;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(45, 45, 45, 0.8);
+  margin: 0 auto auto 25px;
+  max-width: 269px;
+}
+.info-statistic {
+  margin: 100px auto;
+}
+.info-statistic__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 170px;
+
+  border: 1px solid #E7EAEB;
+  background-color: white;
+  border-radius: var(--b-2);
+}
+.info-statistic__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 1;
+
+  height: 60%;
+}
+.info-statistic__item:nth-child(2) {
+  border-left: 1px solid rgba(19, 73, 101, 0.5);
+  border-right: 1px solid rgba(19, 73, 101, 0.5);
+}
+.info-statistic__item p {
+  color: var(--c-dark);
+  font-size: 40px;
+  font-weight: bold;
+}
+.info-statistic__item span {
+  color: var(--c-dark);
+  font-size: 16px;
+}
+.help-form{
+  width: 100%;
+  background: rgba(231, 237, 236, 0.74);
+  border-radius: 10px;
+}
+.help-form__wrapper{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 740px;
+  width: 100%;
+}
+.help-form__title,
+.help-form__description{
+  text-align: center;
+}
+.help-form__title{
+  margin-top: 66px;
+  font-size: 48px;
+  font-weight: 700;
+}
+.help-form__description{
+  margin-top: 51px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.help-form__block{
+  margin: 102px auto 54px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.help-form__item{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.help-form__item:not(:first-child){
+  width: 45%;
+}
+.help-form_bottom{
+  margin-top:100px;
+  max-width: 740px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.help-form__btn{
+  text-align: center;
+  color: #FFFFFF;
+  background: #134965;
+  box-shadow: 0px 2px 4px rgba(15, 218, 137, 0.3);
+  border: 1px solid #134965;
+  border-radius: 10px;
+  max-width: 277px;
+  min-height: 60px;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-weight:700;
+  line-height: 16px;
+  cursor: pointer;
+}
+.help-form__checkbox{
+  max-width: 15px;
+  max-height: 15px;
+  width: 100%;
+  height: 100%;
+}
+label{
+  margin: 20px auto auto 10px;
+}
+.person-data{
+  text-decoration: none;
+  color: #134965;
+}
+.help-form__input_name{
+  padding: 10px 40px 15px 50px;
+  font-size: 18px;
+  font-weight:400;
+  background: transparent;
+  border-bottom: 1px solid #134965;
+  margin-bottom: 50px;
+}
+.name{
+  font-size: 24px;
+  font-weight:500;
+  color: #134965;
+}
+.help-form__input{
+  padding: 10px 40px 15px 50px;
+  font-size: 18px;
+  font-weight:400;
+  background: transparent;
+  border-bottom: 1px solid #134965;
+}
+.help-form__item span{
+  font-size: 24px;
+  font-weight:500;
+}
