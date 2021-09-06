@@ -1,0 +1,235 @@
+main{
+  max-width: 1120px;
+  width: 100%;
+
+  margin: 50px auto 105px auto;
+}
+.user-profile{
+  background: #fff;
+
+  border-radius: 10px;
+}
+.wrapper{
+  padding: 20px !important;
+}
+.title{
+  font-weight: 600;
+  font-size: 32px;
+
+  color: #2D2D2D;
+}
+.user-profile__wrapper{
+  display: flex;
+}
+.user-profile_photo{
+  border-radius: 10px;
+
+  margin-right: 50px;
+
+  max-width: 380px;
+  max-height: 380px;
+
+  cursor: pointer;
+}
+.user-profile_photo img{
+  width: 100%;
+  height: 100%;
+}
+.user-profile__edit{
+  margin: 20px auto;
+
+  max-width: 380px;
+  max-height: 50px;
+  width: 100%;
+  height: 100%;
+
+  font-size: 22px;
+  font-weight: 600;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  border-radius: 10px;
+
+  background: #134965;
+  color: #fff;
+
+  cursor: pointer;
+}
+.user-profile__online-status{
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 18px;
+
+  color: rgba(19, 73, 101, 0.6);
+}
+.user-profile__name{
+  font-weight: bold;
+  font-size: 36px;
+
+  color: #292417;
+}
+.user-profile__info{
+  margin-top: 10px;
+
+  font-weight: 500;
+  font-size: 18px;
+}
+.user-profile__education{
+  margin-top: 20px;
+
+  color: #979797;
+
+  font-weight: 500;
+  font-size: 18px;
+}
+.user-profile_education-list__item{
+  margin-top: 10px;
+
+  font-weight: 500;
+  font-size: 18px;
+}
+.user-profile__contacts{
+  margin-top: 20px;
+
+  color: #979797;
+
+  font-weight: 500;
+  font-size: 18px;
+}
+.user-profile_contacts-list__item{
+  margin-top: 10px;
+
+  font-weight: 500;
+  font-size: 18px;
+}
+.user-resume{
+  background: #fff;
+
+  border-radius: 10px;
+
+  margin-top: 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.user-resume__activity-area{
+  margin-top: 20px;
+
+  font-weight: 500;
+  font-size: 20px;
+}
+.user-resume__title{
+  font-weight: bold;
+  font-size: 36px;
+
+  color: #2D2D2D;
+}
+.user-resume__desire_salary{
+  margin-top: 10px;
+}
+.user-resume__name{
+  font-weight: 600;
+  font-size: 32px;
+
+  color: rgba(19, 73, 101, 0.6);
+
+  margin-top: 10px;
+}
+.user-resume__update-time{
+  font-weight: normal;
+  font-size: 18px;
+
+  color: #2D2D2D;
+
+  margin-top: 10px;
+}
+
+.user-skills_list{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 20px;
+
+}
+.user-skills_list__item{
+  padding: 5px 10px;
+  
+  text-align: center;
+  
+  background: rgba(45, 45, 45, 0.1);
+  
+  border-radius: 10px;
+
+  font-weight: normal;
+  font-size: 18px;
+  
+  cursor: pointer;
+}
+
+
+.user-experince__work-name{
+  margin-top: 20px;
+
+  font-weight: 600;
+  font-size: 32px;
+
+  color: #979797;
+}
+.user-experince__city{
+  margin-top: 10px;
+
+  font-weight: normal;
+  font-size: 18px;
+
+  color: #2D2D2D;
+}
+.user-experince__post{
+  margin-top: 20px;
+
+  font-weight: 600;
+  font-size: 18px;
+
+  color: #2D2D2D;
+}
+.user-experince__date{
+  margin-top: 10px;
+
+  font-weight: normal;
+  font-size: 18px;
+
+  color: #2D2D2D;
+}
+
+.user-institution__education-place{
+  margin-top: 20px;
+
+  font-weight: 600;
+  font-size: 32px; 
+  
+  color: #979797;
+}
+.user-institution__speciality{
+  margin-top: 20px;
+
+  font-weight: 600;
+  font-size: 18px;
+
+  color: #2D2D2D;
+}
+.user-institution__time{
+  margin-top: 10px;
+
+  font-weight: normal;
+  font-size: 18px;
+
+  color: #2D2D2D;
+}
+.user-about__description{
+  margin-top: 20px;
+
+  font-weight: normal;
+  font-size: 18px;
+}
