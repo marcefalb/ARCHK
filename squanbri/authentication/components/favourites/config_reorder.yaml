@@ -1,0 +1,4 @@
+title: Favorites
+modelClass: Squanbri\Authentication\Models\Favorites
+toolbar:
+    buttons: reorder_toolbar

@@ -1,0 +1,280 @@
+/* ----------------------> Главная <---------------------- */
+
+.search-platform {
+  height: 920px;
+  width: 100%;
+  background: url(./../icons/patern.svg);
+}
+.search-platform__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+}
+.search-platform__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  width: 100%;
+}
+.search-platform__content h1 {
+  color: var(--c-dark);
+  font-size: 60px;
+}
+.search-platform__form {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 60px;
+}
+.search-platform__input {
+  width: 80%;
+  height: 100%;
+
+  padding: 18px 0 18px 50px;
+
+  font-size: 20px;
+}
+.search-platform__settings-btn {
+  display: block;
+  
+  width: 50px;
+  height: 100%;
+}
+.search-platform__settings-btn button {
+  width: 100%;
+  height: 100%;
+  
+  background-color: white;
+  cursor: pointer;
+}
+.search-platform__settings-block {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  
+  width: 380px;
+  
+  position: relative;
+  left: -330px;
+  top: 10px;
+  
+  padding: 20px;
+  
+  border-radius: 10px;
+  background-color: white;
+}
+.search-platform__settings-block_active {
+  display: flex;
+}
+.search-platform__settings-block span {
+  font-weight: bold;
+  font-size: 20px;
+}
+.search-platform__settings img {
+  width: 32px;
+  height: 32px;
+}
+.search-platform__btn {
+  width: 20%;
+  height: 100%;
+
+  border-radius: 0;
+
+  text-decoration: none;
+  font-size: 20px;
+}
+.search-platform__link{
+  color: #A0A6B1;
+  font-size: 20px;
+}
+
+.block-vacansies__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  width: 100%;
+
+  margin-top: 70px;
+}
+.block-vacansies__item {
+  height: auto;
+  width: 265px;
+  
+  background-color: white;
+  
+  text-decoration: none;
+  
+  transition: .3s;
+}
+.block-vacansies__item:hover {
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.25);
+}
+.block-vacansies__item a {
+  text-decoration: none;
+  color: var(--c-dark);
+}
+.block-vacansies__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 120px;
+  padding: 8px 18px;
+  background-color: white;
+}
+.block-vacansies__title {
+  font-size: 24px;
+  font-weight: 600;
+}
+.block-vacansies__more {
+  margin: 20px 0 0 20px;
+}
+.block-vacansies__more a {
+  color: var(--c-dark);
+  opacity: .6;
+}
+
+.day-vacansies__title {
+  color: var(--c-dark);
+
+  margin-top: 50px;
+
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+.day-vacansies__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  margin-top: 30px;
+}
+.day-vacansies__item {
+  width: 100%;
+  min-height: 110px;
+  height: auto;
+  
+  background-color: white;
+  border-radius: var(--b-1);
+  
+  transition: box-shadow.3s;
+}
+.day-vacansies__item:hover {
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.25);
+}
+.day-vacansies__item a {
+  display: flex;
+  flex-direction: column;
+  
+  height: 100%;
+  width: 100%;
+  
+  padding: 8px 18px;
+  
+  color: var(--c-dark);
+  
+  text-decoration: none;
+}
+.day-vacansies__name {
+  color: var(--c-main);
+
+  font-size: 24px;
+  font-weight: 500;
+}
+.day-vacansies__salary {
+  font-size: 16px;
+  font-weight: 500;
+}
+.day-vacansies__city {
+  display: block;
+  margin-top: 10px;
+  color: #4F596A;
+  font-size: 15px;
+}
+.day-vacansies__more {
+  margin: 20px 0 0 20px;
+}
+.day-vacansies__more a{
+  color: var(--c-dark);
+  opacity: .6;
+}
+
+.info-statistic {
+  margin-top: 70px;
+}
+.info-statistic__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 170px;
+
+  border: 1px solid #E7EAEB;
+  background-color: white;
+  border-radius: var(--b-2);
+}
+.info-statistic__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 1;
+
+  height: 60%;
+}
+.info-statistic__item:nth-child(2) {
+  border-left: 1px solid rgba(19, 73, 101, 0.5);
+  border-right: 1px solid rgba(19, 73, 101, 0.5);
+}
+.info-statistic__item p {
+  color: var(--c-dark);
+  font-size: 40px;
+  font-weight: bold;
+}
+.info-statistic__item span {
+  color: var(--c-dark);
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .search-platform {
+    height: auto;
+    background: none;
+  }
+  .search-platform__content {
+    gap: 20px;
+  }
+  .search-platform__content h1 {
+    color: var(--c-dark);
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .search-platform__input {
+    width: 100%;
+    border: 1px solid #A0A6B1;
+    padding: 18px 30px ;
+  }
+  .search-platform__input::before {
+    content: '';
+    display: block;
+  }
+  .search-platform__btn {
+    display: none;
+  }
+  .block-vacansies__more {
+    margin: 30px 0;
+    text-align: center;
+  }
+  .day-vacansies__name {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,57 @@
+.vacansy-page {
+  margin-top: 70px;
+}
+.vacansy-page__wrapper,
+.vacansy-page__info {
+  display: flex;
+  flex-direction: column;
+}
+.vacansy-page__wrapper {
+  gap: 50px;
+  
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid #DFE0EB;
+}
+.vacansy-page__info {
+  gap: 20px;
+}
+.vacansy-page__title {
+  font-weight: bold;
+  font-size: 48px;
+}
+.vacansy-page__company {
+  font-weight: bold;
+  font-size: 24px;
+}
+.vacansy-page__company a {
+  text-decoration: none;
+}
+.vacansy-page__salary {
+  color: var(--c-main);
+  
+  font-size: 36px;
+  font-weight: bold;
+}
+.vacansy-page__industrial {
+  color: #979797;
+}
+.vacansy-page__info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px
+}
+.vacansy-page__btns {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+
+
+
+
+
+

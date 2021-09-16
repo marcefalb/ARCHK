@@ -1,0 +1,135 @@
+<section class="edit-page">
+  <h1>Редактирование</h1>
+  <div class="edit-page__wrapper">
+    <form class="edit-page__form" data-request="Vacancies::onEditVacancy" data-request-validate data-request-redirect="/vakansiya/{{ __SELF__.vacancy.id }}">
+      <div class="edit-page__item-row">
+        <p>Должность</p>
+        <input type="text" name="profession" value="{{ __SELF__.vacancy.profession }}">
+        <span data-validate-for="profession"></span>
+      </div>
+      <div class="edit-page__item-row">
+        <p>Направление</p>
+        <select name="industry" id="industry">
+          <option value="Автосервис, автотовары" {{ __SELF__.vacansy.industry == "Автосервис, автотовары" ? 'selected' }}>Автосервис, автотовары</option>
+          <option value="Бытовое обслуживание" {{ __SELF__.vacansy.industry == "Бытовое обслуживание" ? 'selected' }}>Бытовое обслуживание</option>
+          <option value="Государство" {{ __SELF__.vacansy.industry == "Государство" ? 'selected' }}>Государство</option>
+          <option value="Для дома и офиса" {{ __SELF__.vacansy.industry == "Для дома и офиса" ? 'selected' }}>Для дома и офиса</option>
+          <option value="Животные, питомцы" {{ __SELF__.vacansy.industry == "Животные, питомцы" ? 'selected' }}>Животные, питомцы</option>
+          <option value="Компьютеры, интернет" {{ __SELF__.vacansy.industry == "Компьютеры, интернет" ? 'selected' }}>Компьютеры, интернет</option>
+          <option value="Красота, здоровье" {{ __SELF__.vacansy.industry == "Красота, здоровье" ? 'selected' }}>Красота, здоровье</option>
+          <option value="Культура, искусство" {{ __SELF__.vacansy.industry == "Культура, искусство" ? 'selected' }}>Культура, искусство</option>
+          <option value="Мебель" {{ __SELF__.vacansy.industry == "Мебель" ? 'selected' }}>Мебель</option>
+          <option value="Медицина" {{ __SELF__.vacansy.industry == "Медицина" ? 'selected' }}>Медицина</option>
+          <option value="Наука, образование, работа" {{ __SELF__.vacansy.industry == "Наука, образование, работа" ? 'selected' }}>Наука, образование, работа</option>
+          <option value="Недвижимость" {{ __SELF__.vacansy.industry == "Недвижимость" ? 'selected' }}>Недвижимость</option>
+          <option value="Нефть, газ" {{ __SELF__.vacansy.industry == "Нефть, газ" ? 'selected' }}>Нефть, газ</option>
+          <option value="Общество" {{ __SELF__.vacansy.industry == "Общество" ? 'selected' }}>Общество</option>
+          <option value="Одежда, обувь, аксессуары" {{ __SELF__.vacansy.industry == "Одежда, обувь, аксессуары" ? 'selected' }}>Одежда, обувь, аксессуары</option>
+          <option value="Отдых, развлечения, кафе" {{ __SELF__.vacansy.industry == "Отдых, развлечения, кафе" ? 'selected' }}>Отдых, развлечения, кафе</option>
+          <option value="Право" {{ __SELF__.vacansy.industry == "Право" ? 'selected' }}>Право</option>
+          <option value="Продукты питания" {{ __SELF__.vacansy.industry == "Продукты питания" ? 'selected' }}>Продукты питания</option>
+          <option value="Промышленность" {{ __SELF__.vacansy.industry == "Промышленность" ? 'selected' }}>Промышленность</option>
+          <option value="Реклама, полиграфия" {{ __SELF__.vacansy.industry == "Реклама, полиграфия" ? 'selected' }}>Реклама, полиграфия</option>
+          <option value="Рыбная отрасль" {{ __SELF__.vacansy.industry == "Рыбная отрасль" ? 'selected' }}>Рыбная отрасль</option>
+          <option value="СМИ" {{ __SELF__.vacansy.industry == "СМИ" ? 'selected' }}>СМИ</option>
+          <option value="Связь" {{ __SELF__.vacansy.industry == "Связь" ? 'selected' }}>Связь</option>
+          <option value="Семья, дети" {{ __SELF__.vacansy.industry == "Семья, дети" ? 'selected' }}>Семья, дети</option>
+          <option value="Строительство, ремонт" {{ __SELF__.vacansy.industry == "Строительство, ремонт" ? 'selected' }}>Строительство, ремонт</option>
+          <option value="Торговля" {{ __SELF__.vacansy.industry == "Торговля" ? 'selected' }}>Торговля</option>
+          <option value="Транспорт, перевозки" {{ __SELF__.vacansy.industry == "Транспорт, перевозки" ? 'selected' }}>Транспорт, перевозки</option>
+          <option value="Туризм, спорт" {{ __SELF__.vacansy.industry == "Туризм, спорт" ? 'selected' }}>Туризм, спорт</option>
+          <option value="Финансы" {{ __SELF__.vacansy.industry == "Финансы" ? 'selected' }}>Финансы</option>
+          <option value="Экстренные службы" {{ __SELF__.vacansy.industry == "Экстренные службы" ? 'selected' }}>Экстренные службы</option>
+        </select>
+        <span data-validate-for="industry"></span>
+      </div>
+      <div class="edit-page__item-row">
+        <p>Город</p>
+        <select name="city">
+          <option value="Южно-Сахалинск" {{ __SELF__.vacansy.city == "Южно-Сахалинск" ? 'selected' }}>Южно-Сахалинск</option>
+          <option value="Корсаков" {{ __SELF__.vacansy.city == "Корсаков" ? 'selected' }}>Корсаков</option>
+          <option value="Холмск" {{ __SELF__.vacansy.city == "Холмск" ? 'selected' }}>Холмск</option>
+          <option value="Оха" {{ __SELF__.vacansy.city == "Оха" ? 'selected' }}>Оха</option>
+          <option value="Поронайск" {{ __SELF__.vacansy.city == "Поронайск" ? 'selected' }}>Поронайск</option>
+          <option value="Долинск" {{ __SELF__.vacansy.city == "Долинск" ? 'selected' }}>Долинск</option>
+          <option value="Ноглики" {{ __SELF__.vacansy.city == "Ноглики" ? 'selected' }}>Ноглики</option>
+          <option value="Александровск-Сахалинский" {{ __SELF__.vacansy.city == "Александровск-Сахалинский" ? 'selected' }}>Александровск-Сахалинский</option>
+          <option value="Невельск" {{ __SELF__.vacansy.city == "Невельск" ? 'selected' }}>Невельск</option>
+          <option value="Углегорск" {{ __SELF__.vacansy.city == "Углегорск" ? 'selected' }}>Углегорск</option>
+          <option value="Анива" {{ __SELF__.vacansy.city == "Анива" ? 'selected' }}>Анива</option>
+          <option value="Тымовское" {{ __SELF__.vacansy.city == "Тымовское" ? 'selected' }}>Тымовское</option>
+          <option value="Смирных" {{ __SELF__.vacansy.city == "Смирных" ? 'selected' }}>Смирных</option>
+          <option value="Южно-Курильск" {{ __SELF__.vacansy.city == "Южно-Курильск" ? 'selected' }}>Южно-Курильск</option>
+          <option value="Шахтерск" {{ __SELF__.vacansy.city == "Шахтерск" ? 'selected' }}>Шахтерск</option>
+          <option value="Макаров" {{ __SELF__.vacansy.city == "Макаров" ? 'selected' }}>Макаров</option>
+          <option value="Томари" {{ __SELF__.vacansy.city == "Томари" ? 'selected' }}>Томари</option>
+          <option value="Северо-Курильск" {{ __SELF__.vacansy.city == "Северо-Курильск" ? 'selected' }}>Северо-Курильск</option>
+          <option value="Курильск" {{ __SELF__.vacansy.city == "Курильск" ? 'selected' }}>Курильск</option>
+        </select>
+        <span data-validate-for="city"></span>
+      </div>
+      <div class="edit-page__item-row">
+        <p>Зарплата</p>
+        <input type="text" name="salary" value="{{ __SELF__.vacancy.salary }}">
+        <span data-validate-for="salary"></span>
+      </div>
+      <div class="edit-page__item-row">
+        <p>Образование</p>
+        <select name="education">
+          <option value="Не указывать" {{ __SELF__.vacansy.education == "Не указывать" ? 'selected' }}>Не указывать</option>
+          <option value="Неполное среднее" {{ __SELF__.vacansy.education == "Неполное среднее" ? 'selected' }}>Неполное среднее</option>
+          <option value="Среднее" {{ __SELF__.vacansy.education == "Среднее" ? 'selected' }}>Среднее</option>
+          <option value="Среднее профессиональное" {{ __SELF__.vacansy.education == "Среднее профессиональное" ? 'selected' }}>Среднее профессиональное</option>
+          <option value="Неоконченное высшее" {{ __SELF__.vacansy.education == "Неоконченное высшее" ? 'selected' }}>Неоконченное высшее</option>
+          <option value="Высшее" {{ __SELF__.vacansy.education == "Высшее" ? 'selected' }}>Высшее</option>
+        </select>
+        <span data-validate-for="education"></span>
+      </div>
+      <div class="edit-page__item-row">
+        <p>График работы</p>
+        <select name="schedule">
+          <option value="Полная занятость" {{ __SELF__.vacansy.schedule == "Полная занятость" ? 'selected' }}>Полная занятость</option>
+          <option value="Частичная занятость" {{ __SELF__.vacansy.schedule == "Частичная занятость" ? 'selected' }}>Частичная занятость</option>
+          <option value="Вахтовый метод" {{ __SELF__.vacansy.schedule == "Вахтовый метод" ? 'selected' }}>Вахтовый метод</option>
+        </select>
+        <span data-validate-for="schedule"></span>
+      </div>
+      <div class="edit-page__item-row">
+        <p>Опыт работы</p>
+        <select name="experience">
+          <option value="Не указывать" {{ __SELF__.vacansy.experience == "Не указывать" ? 'selected' }}>Не указывать</option>
+          <option value="От 1 до 3 лет" {{ __SELF__.vacansy.experience == "От 1 до 3 лет" ? 'selected' }}>От 1 до 3 лет</option>
+          <option value="От 3 до 5 лет" {{ __SELF__.vacansy.experience == "От 3 до 5 лет" ? 'selected' }}>От 3 до 5 лет</option>
+          <option value="Более 5" {{ __SELF__.vacansy.experience == "Более 5" ? 'selected' }}>Более 5 лет</option>
+          <option value="Без опыта" {{ __SELF__.vacansy.experience == "Без опыта" ? 'selected' }}>Без опыта</option>
+        </select>
+        <span data-validate-for="experience"></span>
+      </div>
+      <div class="edit-page__skills-row">
+        <p>Навыки</p>
+        <div class="edit-page__skill-add">
+          <input type="text" name="skills-list" value="" class="skill-input">
+          <span class="addSkill">&#43;</span>
+          <input type="text" name="skills" class="skills-list_hidden">
+        </div>
+        <ul class="skills-list edit-page__skills-list">
+          {% for skill in __SELF__.vacancy.skills %}
+            <li class="skills-list__item">{{ skill }}<img class="delSkill" src="./../themes/archk/assets/icons/del-vacansy.svg"></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="edit-page__text-row">
+        <p>Описание</p>
+        <textarea type="text" name="description" id="description">{{ __SELF__.vacancy.description }}</textarea>
+        <span data-validate-for="description"></span>
+      </div>
+
+      <span data-request="Vacancies::onDeleteVacancy" class="edit-page__delete">Удалить резюме</span>
+
+      <div class="edit-page__btns">
+        <button type="submit" class="btn-filled">Сохранить</button>
+        <a href="/vacansiya/{{ __SELF__.vacancy.id }}" class="btn-unfilled">Отмена</a>
+      </div>
+    </form>
+  </div>
+</section>

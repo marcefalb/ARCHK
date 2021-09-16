@@ -1,0 +1,10 @@
+name: Company
+form: $/squanbri/authentication/models/companies/fields.yaml
+modelClass: Squanbri\Authentication\Models\Companies
+defaultRedirect: squanbri/authentication/company
+create:
+    redirect: 'squanbri/authentication/company/update/:id'
+    redirectClose: squanbri/authentication/company
+update:
+    redirect: squanbri/authentication/company
+    redirectClose: squanbri/authentication/company

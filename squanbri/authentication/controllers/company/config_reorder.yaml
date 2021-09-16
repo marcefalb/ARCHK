@@ -1,0 +1,4 @@
+title: Company
+modelClass: Squanbri\Authentication\Models\Companies
+toolbar:
+    buttons: reorder_toolbar

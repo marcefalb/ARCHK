@@ -1,0 +1,56 @@
+.company-vacansies__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 70px;
+}
+.company-vacansies__title {
+  font-size: 36px;
+  font-weight: bold;
+}
+.company-vacansies__place {
+  display: flex;
+  gap: 10px;
+}
+.company-vacansies__place h3,
+.company-vacansies__place span {
+  font-size: 32px;
+  font-weight: bold;
+}
+.company-vacansies__place h3 {
+  color: #134965;
+  opacity: .6;
+}
+.company-vacansies__place span {
+  color: #979797;
+}
+.company-vacansies__list {
+  margin-left: 20px;
+  color: #134965;
+  font-size: 24px;
+}
+.company-vacansies__item a {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  
+  padding: 10px 0;
+  
+  border-bottom: 1px solid #E4E4E7;
+  color: #2d2d2d;
+  
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+.company-vacansies__description {
+  margin-top: 5px;
+  color: #71717A;
+  font-size: 18px;
+}
+.company-vacansies__profession {
+  color: var(--c-main);
+}

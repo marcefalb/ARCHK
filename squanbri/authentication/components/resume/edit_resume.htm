@@ -1,0 +1,233 @@
+<section class="edit-page">
+  <h1>Редактирование</h1>
+  <div class="edit-page__wrapper">
+    <form class="edit-page__form" data-request="Resume::onEditResume" data-request-validate data-request-redirect="/polzovatel/{{ __SELF__.resume.id }}">
+      
+      <div class="edit-page__item-row">
+        <p>Сфера деятельности</p>
+        <select name="industry" id="industry">
+          <option value="Автосервис, автотовары" {{ __SELF__.resume.industry == "Автосервис, автотовары" ? 'selected' }}>Автосервис, автотовары</option>
+          <option value="Бытовое обслуживание" {{ __SELF__.resume.industry == "Бытовое обслуживание" ? 'selected' }}>Бытовое обслуживание</option>
+          <option value="Государство" {{ __SELF__.resume.industry == "Государство" ? 'selected' }}>Государство</option>
+          <option value="Для дома и офиса" {{ __SELF__.resume.industry == "Для дома и офиса" ? 'selected' }}>Для дома и офиса</option>
+          <option value="Животные, питомцы" {{ __SELF__.resume.industry == "Животные, питомцы" ? 'selected' }}>Животные, питомцы</option>
+          <option value="Компьютеры, интернет" {{ __SELF__.resume.industry == "Компьютеры, интернет" ? 'selected' }}>Компьютеры, интернет</option>
+          <option value="Красота, здоровье" {{ __SELF__.resume.industry == "Красота, здоровье" ? 'selected' }}>Красота, здоровье</option>
+          <option value="Культура, искусство" {{ __SELF__.resume.industry == "Культура, искусство" ? 'selected' }}>Культура, искусство</option>
+          <option value="Мебель" {{ __SELF__.resume.industry == "Мебель" ? 'selected' }}>Мебель</option>
+          <option value="Медицина" {{ __SELF__.resume.industry == "Медицина" ? 'selected' }}>Медицина</option>
+          <option value="Наука, образование, работа" {{ __SELF__.resume.industry == "Наука, образование, работа" ? 'selected' }}>Наука, образование, работа</option>
+          <option value="Недвижимость" {{ __SELF__.resume.industry == "Недвижимость" ? 'selected' }}>Недвижимость</option>
+          <option value="Нефть, газ" {{ __SELF__.resume.industry == "Нефть, газ" ? 'selected' }}>Нефть, газ</option>
+          <option value="Общество" {{ __SELF__.resume.industry == "Общество" ? 'selected' }}>Общество</option>
+          <option value="Одежда, обувь, аксессуары" {{ __SELF__.resume.industry == "Одежда, обувь, аксессуары" ? 'selected' }}>Одежда, обувь, аксессуары</option>
+          <option value="Отдых, развлечения, кафе" {{ __SELF__.resume.industry == "Отдых, развлечения, кафе" ? 'selected' }}>Отдых, развлечения, кафе</option>
+          <option value="Право" {{ __SELF__.resume.industry == "Право" ? 'selected' }}>Право</option>
+          <option value="Продукты питания" {{ __SELF__.resume.industry == "Продукты питания" ? 'selected' }}>Продукты питания</option>
+          <option value="Промышленность" {{ __SELF__.resume.industry == "Промышленность" ? 'selected' }}>Промышленность</option>
+          <option value="Реклама, полиграфия" {{ __SELF__.resume.industry == "Реклама, полиграфия" ? 'selected' }}>Реклама, полиграфия</option>
+          <option value="Рыбная отрасль" {{ __SELF__.resume.industry == "Рыбная отрасль" ? 'selected' }}>Рыбная отрасль</option>
+          <option value="СМИ" {{ __SELF__.resume.industry == "СМИ" ? 'selected' }}>СМИ</option>
+          <option value="Связь" {{ __SELF__.resume.industry == "Связь" ? 'selected' }}>Связь</option>
+          <option value="Семья, дети" {{ __SELF__.resume.industry == "Семья, дети" ? 'selected' }}>Семья, дети</option>
+          <option value="Строительство, ремонт" {{ __SELF__.resume.industry == "Строительство, ремонт" ? 'selected' }}>Строительство, ремонт</option>
+          <option value="Торговля" {{ __SELF__.resume.industry == "Торговля" ? 'selected' }}>Торговля</option>
+          <option value="Транспорт, перевозки" {{ __SELF__.resume.industry == "Транспорт, перевозки" ? 'selected' }}>Транспорт, перевозки</option>
+          <option value="Туризм, спорт" {{ __SELF__.resume.industry == "Туризм, спорт" ? 'selected' }}>Туризм, спорт</option>
+          <option value="Финансы" {{ __SELF__.resume.industry == "Финансы" ? 'selected' }}>Финансы</option>
+          <option value="Экстренные службы" {{ __SELF__.resume.industry == "Экстренные службы" ? 'selected' }}>Экстренные службы</option>
+        </select>
+        <span data-validate-for="industry"></span>
+      </div>
+      <div class="edit-page__item-row">
+        <p>Профессия</p>
+        <input type="text" name="profession" value="{{ __SELF__.resume.profession }}">
+        <span data-validate-for="profession"></span>
+      </div>
+      <div class="edit-page__item-row">
+        <p>З/П</p>
+        <input type="text" name="salary" value="{{ __SELF__.resume.salary }}">
+        <span data-validate-for="salary"></span>
+      </div>
+      <div class="edit-page__item-row">
+        <p>График работы</p>
+        <select name="schedule" id="schedule">
+          <option value="Полная занятость" {{ __SELF__.resume.schedule == "Полная занятость" ? 'selected' }}>Полная занятость</option>
+          <option value="Частичная занятость" {{ __SELF__.resume.schedule == "Частичная занятость" ? 'selected' }}>Частичная занятость</option>
+          <option value="Вахтовый метод" {{ __SELF__.resume.schedule == "Вахтовый метод" ? 'selected' }}>Вахтовый метод</option>
+        </select>
+        <span data-validate-for="schedule"></span>
+      </div>
+      <div class="edit-page__skills-row">
+        <p>Навыки</p>
+        <div class="edit-page__skill-add">
+          <input type="text" name="skills-list" value="" class="skill-input">
+          <span class="addSkill">&#43;</span>
+          <input type="text" name="skills" class="skills-list_hidden">
+        </div>
+        
+        <ul class="skills-list edit-page__skills-list">
+          {% for index,skill in __SELF__.resume.skills %}
+            <li class="skills-list__item" data-id = "{{index}}">{{ skill }}<img class="delSkill" src="./../themes/archk/assets/icons/del-vacansy.svg"></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="edit-page__item-row">
+        <p>Опыт работы</p>
+        <select name="experience">
+          <option value="Не указывать" {{ __SELF__.resume.experience == "Не указывать" ? 'selected' }}>Не указывать</option>
+          <option value="От 1 до 3 лет" {{ __SELF__.resume.experience == "От 1 до 3 лет" ? 'selected' }}>От 1 до 3 лет</option>
+          <option value="От 3 до 5 лет" {{ __SELF__.resume.experience == "От 3 до 5 лет" ? 'selected' }}>От 3 до 5 лет</option>
+          <option value="Более 5" {{ __SELF__.resume.experience == "Более 5" ? 'selected' }}>Более 5</option>
+          <option value="Без опыта" {{ __SELF__.resume.experience == "Без опыта" ? 'selected' }}>Без опыта</option>
+        </select>
+        <span data-validate-for="experience"></span>
+      </div>
+      <div class="edit-page__text-row">
+        <p>Предыдущие места работы, должности, функции</p>
+        <textarea name="experience_places" cols="30" rows="5">{{ __SELF__.resume.experience_places }}</textarea>
+        <span data-validate-for="experience_places"></span>
+      </div>
+      <div class="edit-page__item-row">
+        <p>Образование</p>
+        <select name="education">
+          <option value="Не указывать" {{ __SELF__.resume.education == "Не указывать" ? 'selected' }}>Не указывать</option>
+          <option value="Неполное среднее" {{ __SELF__.resume.education == "Неполное среднее" ? 'selected' }}>Неполное среднее</option>
+          <option value="Среднее" {{ __SELF__.resume.education == "Среднее" ? 'selected' }}>Среднее</option>
+          <option value="Среднее профессиональное" {{ __SELF__.resume.education == "Среднее профессиональное" ? 'selected' }}>Среднее профессиональное</option>
+          <option value="Неоконченное высшее" {{ __SELF__.resume.education == "Неоконченное высшее" ? 'selected' }}>Неоконченное высшее</option>
+          <option value="Высшее" {{ __SELF__.resume.education == "Высшее" ? 'selected' }}>Высшее</option>
+        </select>
+        <span data-validate-for="education"></span>
+      </div>
+      <div class="edit-page__text-row">
+        <p>Учебные заведения, год окончания, специальность</p>
+        <textarea name="education_places" cols="30" rows="5">{{ __SELF__.resume.education_places }}</textarea>
+        <span data-validate-for="education_places"></span>
+      </div>
+      <div class="edit-page__text-row">
+        <p>Обо мне</p>
+        <textarea name="about" cols="30" rows="5">{{ __SELF__.resume.about }}</textarea>
+        <span data-validate-for="about"></span>
+      </div>
+
+      <span class="edit-page__delete">Удалить резюме</span>
+
+      <div class="edit-page__btns">
+        <button type="submit" class="btn-filled">Сохранить</button>
+        <a href="#" class="btn-unfilled">Отмена</a>
+      </div>
+    </form>
+  </div>
+</section>
+<!-- <form data-request="Account::onEditProfile" data-request-validate>
+  <section class="profile">
+    <div class="profile__wrapper wrapper">
+      <div class="profile__img">
+        <img src="{{ 'assets/images/user-profile.png'|theme }}" alt="ava">
+      </div>
+      <div class="profile__description">
+        <label for="name">ФИО</label>
+        <input type="text" name="name" id="name" value="{{ __SELF__.user.name }}">
+        <span data-validate-for="name"></span><br>
+      
+        <label for="sex">Пол</label>
+        {{__SELF__.user.sex}}
+        <select name="sex" id="sex">
+          <option value="Мужчина" {{ __SELF__.user.sex == "Мужчина" ? 'selected' }}>Мужской</option>
+          <option value="Женщина" {{ __SELF__.user.sex == "Женщина" ? 'selected' }}>Женский</option>
+        </select>
+        <span data-validate-for="sex"></span><br>
+      
+        <label for="date">Дата рождения</label>
+        <input type="date" name="date" id="date" value="{{ __SELF__.user.birth_date }}">
+        <span data-validate-for="date"></span><br>
+      
+        <label for="education">Телефон</label>
+        <input type="text" name="phone" id="phone" value="{{ __SELF__.user.phone }}">
+        <span data-validate-for="phone"></span><br>
+
+        <label for="city">Город</label>
+        <select name="city" id="city">
+          <option value="Южно-Сахалинск" {{ __SELF__.user.city == "Южно-Сахалинск" ? 'selected' }}>Южно-Сахалинск</option>
+          <option value="Корсаков" {{ __SELF__.user.city == "Корсаков" ? 'selected' }}>Корсаков</option>
+          <option value="Холмск" {{ __SELF__.user.city == "Холмск" ? 'selected' }}>Холмск</option>
+        </select>
+        <span data-validate-for="city"></span><br>
+
+        <label for="citizenship">Гражданство</label>
+        <input type="text" name="citizenship" id="citizenship" value="{{__SELF__.user.citizenship}}">
+        <span data-validate-for="citizenship"></span><br>
+      </div> 
+    </div>
+
+
+
+
+    <div class="profile__wrapper wrapper">
+      <label for="profession">Профессия</label>
+      <input type="text" name="profession" id="profession" value="{{ __SELF__.resume.profession }}">
+      <span data-validate-for="profession"></span><br>
+
+      <label for="industrial">Направление</label>
+      <select name="industrial" id="industrial">
+        <option value="Автосервис, автотовары"  {{ __SELF__.resume.industrial == "Автосервис, автотовары" ? 'selected' }}>Автосервис, автотовары</option>
+        <option value="Бытовое обслуживание"  {{ __SELF__.resume.industrial == "Бытовое обслуживание" ? 'selected' }}>Бытовое обслуживание</option>
+        <option value="Государство"  {{ __SELF__.resume.industrial == "Государство" ? 'selected' }}>Государство</option>
+      </select>
+      <span data-validate-for="industrial"></span><br>
+
+      <label for="salary">Зарплата</label>
+      <input type="text" name="salary" id="salary" value="{{ __SELF__.resume.salary }}">
+      <span data-validate-for="salary"></span><br>
+
+      <label for="schedule">График работы</label>
+      <select name="schedule" id="schedule">
+        <option value="Полная занятость" {{ __SELF__.resume.schedule == "Полная занятость" ? 'selected' }}>Полная занятость</option>
+        <option value="Частичная занятость" {{ __SELF__.resume.schedule == "Частичная занятость" ? 'selected' }}>Частичная занятость</option>
+        <option value="Вахтовый метод" {{ __SELF__.resume.schedule == "Вахтовый метод" ? 'selected' }}>Вахтовый метод</option>
+      </select>
+      <span data-validate-for="schedule"></span><br>
+
+      <label for="skills">Навыки</label>
+      
+      <span data-validate-for="skills"></span><br>
+
+      <label for="experience">Опыт работы</label>
+      <select name="experience" id="experience">
+        <option value="Не указывать" {{ __SELF__.resume.experience == "Не указывать" ? 'selected' }}>Не указывать</option>
+        <option value="От 1 до 3 лет" {{ __SELF__.resume.experience == "От 1 до 3 лет" ? 'selected' }}>От 1 до 3 лет</option>
+        <option value="От 3 до 5 лет" {{ __SELF__.resume.experience == "От 3 до 5 лет" ? 'selected' }}>От 3 до 5 лет</option>
+        <option value="Более 5" {{ __SELF__.resume.experience == "Более 5" ? 'selected' }}>Более 5</option>
+        <option value="Без опыта" {{ __SELF__.resume.experience == "Без опыта" ? 'selected' }}>Без опыта</option>
+      </select>
+      <span data-validate-for="experience"></span><br>
+
+      <label for="experience_places">Предыдущие места работы, должности, функции</label><br>
+      <textarea type="text" name="experience_places" id="experience_places">{{ __SELF__.resume.experience_places }}</textarea><br><br>
+
+      <label for="education">Образование</label>
+      <select name="education" id="education">
+        <option value="Не указывать" {{ __SELF__.resume.education == "Не указывать" ? 'selected' }}>Не указывать</option>
+        <option value="Неполное среднее" {{ __SELF__.resume.education == "Неполное среднее" ? 'selected' }}>Неполное среднее</option>
+        <option value="Среднее" {{ __SELF__.resume.education == "Среднее" ? 'selected' }}>Среднее</option>
+        <option value="Среднее профессиональное" {{ __SELF__.resume.education == "Среднее профессиональное" ? 'selected' }}>Среднее профессиональное</option>
+        <option value="Неоконченное высшее" {{ __SELF__.resume.education == "Неоконченное высшее" ? 'selected' }}>Неоконченное высшее</option>
+        <option value="Высшее" {{ __SELF__.resume.education == "Высшее" ? 'selected' }}>Высшее</option>
+      </select>
+      <span data-validate-for="education"></span><br>
+
+      <label for="education_places">Учебные заведения, год окончания, специальность</label><br>
+      <textarea type="text" name="education_places" id="education_places">{{ __SELF__.resume.education_places }}</textarea><br><br>
+      
+      <label for="about">Обо мне</label><br>
+      <textarea type="about" name="about" id="about">{{ __SELF__.resume.about }}</textarea>
+
+
+      <div class="profile__btn">
+        <button type="submit">Сохранить изменения</button>
+      </div>
+    </div>
+    
+  </section>      
+</form> -->

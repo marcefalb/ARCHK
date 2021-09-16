@@ -1,0 +1,131 @@
+<section class="edit-page">
+  <h1>Создание вакансии</h1>
+  <div class="edit-page__wrapper">
+    <form data-request="Vacancies::onAddVacancy" data-request-validate data-request-redirect="/kompaniya/{{ __SELF__.company_id }}"></form>
+      <div class="edit-page__item-row">
+        <p>Должность</p>
+        <input type="text" name="profession">
+        <span data-validate-for="profession"></span>
+      </div>
+      <div class="edit-page__item-row">
+        <p>Направление</p>
+        <select name="industry" id="industry">
+          <option value="Автосервис, автотовары">Автосервис, автотовары</option>
+          <option value="Бытовое обслуживание">Бытовое обслуживание</option>
+          <option value="Государство">Государство</option>
+          <option value="Для дома и офиса">Для дома и офиса</option>
+          <option value="Животные, питомцы">Животные, питомцы</option>
+          <option value="Компьютеры, интернет">Компьютеры, интернет</option>
+          <option value="Красота, здоровье">Красота, здоровье</option>
+          <option value="Культура, искусство">Культура, искусство</option>
+          <option value="Мебель">Мебель</option>
+          <option value="Медицина">Медицина</option>
+          <option value="Наука, образование, работа">Наука, образование, работа</option>
+          <option value="Недвижимость">Недвижимость</option>
+          <option value="Нефть, газ">Нефть, газ</option>
+          <option value="Общество">Общество</option>
+          <option value="Одежда, обувь, аксессуары">Одежда, обувь, аксессуары</option>
+          <option value="Отдых, развлечения, кафе">Отдых, развлечения, кафе</option>
+          <option value="Право">Право</option>
+          <option value="Продукты питания">Продукты питания</option>
+          <option value="Промышленность">Промышленность</option>
+          <option value="Реклама, полиграфия">Реклама, полиграфия</option>
+          <option value="Рыбная отрасль">Рыбная отрасль</option>
+          <option value="СМИ">СМИ</option>
+          <option value="Связь">Связь</option>
+          <option value="Семья, дети">Семья, дети</option>
+          <option value="Строительство, ремонт">Строительство, ремонт</option>
+          <option value="Торговля">Торговля</option>
+          <option value="Транспорт, перевозки">Транспорт, перевозки</option>
+          <option value="Туризм, спорт">Туризм, спорт</option>
+          <option value="Финансы">Финансы</option>
+          <option value="Экстренные службы">Экстренные службы</option>
+        </select>
+        <span data-validate-for="industry"></span>
+      </div>
+      <div class="edit-page__item-row">
+        <p>Город</p>
+        <select name="city" id="city">
+          <option value="Южно-Сахалинск">Южно-Сахалинск</option>
+          <option value="Корсаков">Корсаков</option>
+          <option value="Холмск">Холмск</option>
+          <option value="Оха">Оха</option>
+          <option value="Поронайск">Поронайск</option>
+          <option value="Долинск">Долинск</option>
+          <option value="Ноглики">Ноглики</option>
+          <option value="Александровск-Сахалинский">Александровск-Сахалинский</option>
+          <option value="Невельск">Невельск</option>
+          <option value="Углегорск">Углегорск</option>
+          <option value="Анива">Анива</option>
+          <option value="Тымовское">Тымовское</option>
+          <option value="Смирных">Смирных</option>
+          <option value="Южно-Курильск">Южно-Курильск</option>
+          <option value="Шахтерск">Шахтерск</option>
+          <option value="Макаров">Макаров</option>
+          <option value="Томари">Томари</option>
+          <option value="Северо-Курильск">Северо-Курильск</option>
+          <option value="Курильск">Курильск</option>
+        </select>
+        <span data-validate-for="city"></span>
+      </div>
+      <div class="edit-page__item-row">
+        <p>Зарплата</p>
+        <input type="text" name="salary" value="{{ __SELF__.vacancy.salary }}">
+        <span data-validate-for="salary"></span>
+      </div>
+      <div class="edit-page__item-row">
+        <p>Образование</p>
+        <select name="education">
+          <option value="Не указывать">Не указывать</option>
+          <option value="Неполное среднее">Неполное среднее</option>
+          <option value="Среднее">Среднее</option>
+          <option value="Среднее профессиональное">Среднее профессиональное</option>
+          <option value="Неоконченное высшее">Неоконченное высшее</option>
+          <option value="Высшее">Высшее</option>
+        </select>
+        <span data-validate-for="education"></span>
+      </div>
+      <div class="edit-page__item-row">
+        <p>График работы</p>
+        <select name="schedule">
+          <option value="Полная занятость">Полная занятость</option>
+          <option value="Частичная занятость">Частичная занятость</option>
+          <option value="Вахтовый метод">Вахтовый метод</option>
+        </select>
+        <span data-validate-for="schedule"></span>
+      </div>
+      <div class="edit-page__item-row">
+        <p>Опыт работы</p>
+        <select name="experience">
+          <option value="Не указывать">Не указывать</option>
+          <option value="От 1 до 3 лет">От 1 до 3 лет</option>
+          <option value="От 3 до 5 лет">От 3 до 5 лет</option>
+          <option value="Более 5">Более 5 лет</option>
+          <option value="Без опыта">Без опыта</option>
+        </select>
+        <span data-validate-for="experience"></span>
+      </div>
+      <div class="edit-page__skills-row">
+        <p>Навыки</p>
+        <div class="edit-page__skill-add">
+          <input type="text" name="skills-list" value="" class="skill-input">
+          <span class="addSkill">&#43;</span>
+          <input type="text" name="skills" class="skills-list_hidden">
+        </div>
+        <ul class="skills-list edit-page__skills-list">
+
+        </ul>
+      </div>
+      <div class="edit-page__text-row">
+        <p>Описание</p>
+        <textarea type="text" name="description" id="description"></textarea>
+        <span data-validate-for="description"></span>
+      </div>
+
+      <div class="edit-page__btns">
+        <button type="submit" class="btn-filled">Создать</button>
+        <a href="/kompaniya/{{ __SELF__.company_id }}" class="btn-unfilled">Отмена</a>
+      </div>
+    </form>
+  </div>
+</section>

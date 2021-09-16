@@ -1,0 +1,38 @@
+<section class="enter-form">
+  <div class="wrapper enter-form__wrapper">
+    <h1 class="enter-form__title">Регистрация</h1>
+    <form data-request="Account::onRegistration" data-request-validate class="enter-form__form">
+
+      <ul class="enter-form__list">
+        <li class="enter-form__item">
+          <input type="text" name="email" id="email" placeholder="Email">
+          <span data-validate-for="email"></span>
+        </li>
+        <li class="enter-form__item">
+          <input type="password" name="password" id="password" placeholder="Пароль">
+          <span data-validate-for="password"></span>
+        </li>
+        <li class="enter-form__item">
+          <input type="password" name="password_confirmation" id="password_confirmation" placeholder="Повторите пароль">
+          <span data-validate-for="password_confirmation"></span>
+        </li>
+      </ul>
+
+      <div class="radio__list">
+        <div class="radio__item">
+          <input type="radio" name="type_user" id="user" value="user" checked>
+          <label for="user">Соискатель</label>
+        </div>
+        <div class="radio__item">
+          <input type="radio" name="type_user" id="company" value="company">
+          <label for="company">Работодатель</label>
+        </div>
+      </div>
+      
+      <div class="enter-form__btns">
+        <button type="submit">Далее</button>
+        <a href="./autentifikaciya">Уже есть аккаунт?</a>
+      </div>
+    </form>
+  </div>
+</section>

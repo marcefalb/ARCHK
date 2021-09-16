@@ -1,0 +1,33 @@
+<section class="enter-form">
+  <div class="wrapper enter-form__wrapper">
+    <h1 class="enter-form__title">Авторизация</h1>
+    <form data-request="Account::onAuthentication " data-request-validate class="enter-form__form">
+      <ul class="enter-form__list">
+        <li class="enter-form__item">
+          <input type="text" name="email" id="email" placeholder="Email или телефон" value="{{ form_value('email') }}">
+          <span data-validate-for="email"></span>
+        </li>
+        <li class="enter-form__item">
+          <input type="password" name="password" id="password" placeholder="Пароль" value="{{ form_value('password') }}">
+          <span data-validate-for="password"></span>
+        </li>
+      </ul>
+
+      <div class="enter-form__valid">
+        {% flash %}
+          <span>{{ message }}</span>
+        {% endflash %}
+      </div>
+
+      <div class="enter-form__btns enter-form__auth">
+        <button type="submit">Продолжить</button>
+        <a href="./registraciya">Еще нет аккаунта?</a>
+      </div>
+    </form>
+  </div>
+  <div class="wrapper">
+    <p class="enter-form__conditions">
+      Нажимая «продолжить», вы подтверждаете, что ознакомлены, полностью согласны и принимаете условия <a href="#">«Соглашения об оказании услуг по содействию в трудоустройстве (оферта)»</a> 
+    </p>
+  </div>
+</section>

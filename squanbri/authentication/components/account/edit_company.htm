@@ -1,0 +1,65 @@
+<style>
+  input,
+  select,
+  textarea {
+    border: 1px solid black;
+    min-height: 20px;
+  }
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border: 1px solid black;
+  }
+
+  button {
+    padding: 20px 40px;
+    font-size: 18px;
+    background-color: #134965;
+    color: #fff;
+    font-weight: 500;
+    max-width: 380px;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  span[data-validate-for] {
+    color: red;
+    margin-bottom: 10px;
+  }
+</style>
+<form data-request="Account::onEditCompany" data-request-validate>
+  <section class="profile">
+    <div class="profile__wrapper wrapper">
+      <div class="profile__img">
+        <img src="{{ 'assets/images/ava-profile.png'|theme }}" alt="ava">
+      </div>
+      <div class="profile__description">
+        <label for="name">ФИО</label>
+        <input type="text" name="name" id="name" value="{{ __SELF__.user.name }}">
+        <span data-validate-for="name"></span><br>
+
+        <label for="address">Адресс</label>
+        <input type="text" name="address" id="address" value="{{ __SELF__.user.address }}">
+        <span data-validate-for="address"></span><br>
+
+        <label for="education">Телефон</label>
+        <input type="text" name="phone" id="phone" value="{{ __SELF__.user.phone }}">
+        <span data-validate-for="phone"></span><br>
+
+        <label for="sphere_profession">Направление</label>
+        <input type="text" name="sphere_profession" id="industrial"  value="{{ __SELF__.user.industrial }}">
+        <span data-validate-for="sphere_profession"></span><br>
+      </div>
+      <div class="profile__btn">
+        <button type="submit">Сохранить</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="profile-description">
+    <div class="profile-description__wrapper wrapper-info">
+      <h2>Accenture Systems, Inc. </h2>
+      <textarea name="description">{{ __SELF__.user.description }}</textarea>
+    </div>
+  </section>
+</form>

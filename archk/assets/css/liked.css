@@ -1,0 +1,14 @@
+.liked-vacansies h1 {
+  max-width: 1160px;
+  
+  padding: 0 20px;
+  margin: 50px auto 30px auto;
+  
+  color: var(--c-dark);
+  
+  font-size: 36px;
+}
+.liked-vacansies__wrapper {
+  max-width: 1160px !important;
+  margin: 0 auto;
+}
